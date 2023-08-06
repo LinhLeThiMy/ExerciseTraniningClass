@@ -19,8 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 
 def store_name = 'Transcy-ltm1'
+def email = 'linhltm@fireapps.vn'
+def password = 'Shopify@2020'
 
 WebUI.openBrowser("https://partners.shopify.com/1662018/stores/new?store_type=test_store")
+
+WebUI.maximizeWindow()
+
+//Login shopify
+	WebUI.setText(findTestObject('Object Repository/Page_LogInShopify/input_email'),email )
+	
+	WebUI.click(findTestObject('Object Repository/Page_LogInShopify/btn_ContinueWithEmail'))
+	
+	WebUI.delay(30)
+	
+	WebUI.setText(findTestObject('Object Repository/Page_LogInShopify/input_password'),password)
+	
+	WebUI.click(findTestObject('Object Repository/Page_LogInShopify/btn_login'))
 
 WebUI.setText(findTestObject('Object Repository/Page_CreateNewStore/input_storeName'), store_name)
 

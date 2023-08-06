@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 def store_name = 'transcy-staging'
+def email = 'linhltm@fireapps.vn'
+def password = 'Shopify@2020'
 
 WebUI.openBrowser("https://alireviews-fe.onecommerce.io/install")
 
@@ -26,6 +28,17 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Object Repository/Page_InstallApp/input_storeToInstall'), store_name)
 
 WebUI.click(findTestObject('Object Repository/Page_InstallApp/button_loginToInstall'))
+
+//Login shopify
+	WebUI.setText(findTestObject('Object Repository/Page_LogInShopify/input_email'),email )
+	
+	WebUI.click(findTestObject('Object Repository/Page_LogInShopify/btn_ContinueWithEmail'))
+	
+	WebUI.delay(30)
+	
+	WebUI.setText(findTestObject('Object Repository/Page_LogInShopify/input_password'),password)
+	
+	WebUI.click(findTestObject('Object Repository/Page_LogInShopify/btn_login'))
 
 WebUI.click(findTestObject('Object Repository/Page_InstallApp/btn_Install'))
 

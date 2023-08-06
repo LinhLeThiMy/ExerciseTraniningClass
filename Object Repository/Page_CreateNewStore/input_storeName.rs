@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='PolarisTextField3']</value>
+         <value>//input[@id='PolarisTextField1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
