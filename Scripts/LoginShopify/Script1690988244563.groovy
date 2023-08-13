@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 def email = 'linhltm@fireapps.vn'
-def password = 'npkp5i20tvjZXz5VQboNTA=='
+def password = 'Shopify@2020'//hiện tại dùng mã encrypt shopify không nhận diện được text-> báo sai pass
 
 WebUI.openBrowser("https://www.shopify.com/partners")
 
@@ -30,6 +30,8 @@ WebUI.click(btn_homeLogin)
 WebUI.setText(input_email, email)
 
 WebUI.click(btn_continueWithEmail)
+
+//WebUI.delay(30)--để trường hợp dính capcha
 
 WebUI.setText(input_password, password)
 

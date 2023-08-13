@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def store_name = 'transcy-staging'
 def email = 'linhltm@fireapps.vn'
-def password = 'Shopify@2020'
+def password = 'Shopify@2020'//hiện tại dùng mã encrypt shopify không nhận diện được text-> báo sai pass
 
 WebUI.openBrowser("https://alireviews-fe.onecommerce.io/install")
 
@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Object Repository/Page_InstallApp/button_loginToInst
 	
 	WebUI.click(findTestObject('Object Repository/Page_LogInShopify/btn_ContinueWithEmail'))
 	
-	WebUI.delay(30)
+	//WebUI.delay(30)--để trường hợp dính capcha
 	
 	WebUI.setText(findTestObject('Object Repository/Page_LogInShopify/input_password'),password)
 	

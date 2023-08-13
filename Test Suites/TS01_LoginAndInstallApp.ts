@@ -14,20 +14,6 @@ Innstall app</description>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>0cdd33b1-07dd-4598-a9c6-fb0aca5a11d1</testSuiteGuid>
    <testCaseLink>
-      <guid>9facb27c-70f8-4975-8a35-66e2d33ecacb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/createNewStore</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f66df828-c09f-4db4-ab30-286685d3dfe7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/installApp</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>bb0c3f2e-b77a-4352-bcae-15e9fd9af609</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -62,6 +48,35 @@ Innstall app</description>
          <type>DEFAULT</type>
          <value></value>
          <variableId>bb24f3f3-727f-46db-b837-27c632f7698f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f66df828-c09f-4db4-ab30-286685d3dfe7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/installApp</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9facb27c-70f8-4975-8a35-66e2d33ecacb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/createNewStore</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0b5e9a0f-9764-4208-b8b0-96d2c5f57adf</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/store_name</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>0b5e9a0f-9764-4208-b8b0-96d2c5f57adf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>store_name</value>
+         <variableId>ccd52e65-d857-497f-956f-c75e89b04cde</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

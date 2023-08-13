@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b5bf62a7-827b-4bdd-8911-7620a2cd4ae7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ccd52e65-d857-497f-956f-c75e89b04cde</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('store_name')</defaultValue>
+      <description></description>
+      <id>ccd52e65-d857-497f-956f-c75e89b04cde</id>
+      <masked>false</masked>
+      <name>store_name</name>
+   </variable>
 </TestCaseEntity>
